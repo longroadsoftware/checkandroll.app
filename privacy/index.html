@@ -55,6 +55,8 @@
       <li>There are no analytics, no ads, no tracking, and no third-party code in the app.</li>
       <li>Check &amp; Roll sends nothing to Long Road Software by itself. There is no Long Road Software server. If you email us, you decide what to send.</li>
       <li>Your checklists are kept on your iPhone or iPad and, if you use iCloud, in the private part of your own iCloud account. Long Road Software can't see either.</li>
+      <li>If you share a checklist, the people you invite can see and change it through Apple's iCloud sharing, not through a Long Road Software server. They also see the device name of whoever checked each step, you included, and the invitation shows who is invited. We still can't see any of it.</li>
+      <li>When someone else finishes a checklist you share, Check &amp; Roll can show a notification. It's written on your device from the list it already has; Apple's push only tells the app that something changed.</li>
       <li>The hands-free walk-through recognizes speech on your device, and only while it's running. What it hears is never recorded and never sent anywhere.</li>
       <li>Motion is used only to pause the walk-through while the rig is moving.</li>
       <li>Check &amp; Roll Pro is bought through Apple. Long Road Software never sees your payment details.</li>
@@ -70,14 +72,15 @@
         <tr><td>Each run of a checklist, and each check, skip or uncheck: which step, when, and who</td><td>Run history, Undo and Restore, and knowing when a list is finished</td></tr>
         <tr><td>A name for this device ("iPhone", "iPad", or a name you type in Settings) and a random ID made when the app was installed</td><td>So run history can say who checked what, even with two phones on one Apple Account</td></tr>
         <tr><td>Deletion markers: which rig or checklist was deleted, when and by whom</td><td>So a deleted list doesn't come back from another device</td></tr>
-        <tr><td>Your settings: the walk-through's words, wake word and speaking speed, chimes and haptics, which rig and list you last had open, and whether you finished the welcome screens</td><td>To work the way you set it up</td></tr>
+        <tr><td>Your settings: the walk-through's words, wake word and speaking speed, chimes and haptics, whether to show shared-list notifications, which rig and list you last had open, and whether you finished the welcome screens</td><td>To work the way you set it up</td></tr>
         <tr><td>Today's hands-free walk-throughs</td><td>The free version's one-a-day limit</td></tr>
         <tr><td>Whether Pro was unlocked last time the app checked</td><td>So the app shows the right thing the moment it opens; the App Store stays the authority</td></tr>
         <tr><td>Sync bookkeeping: changes iCloud hasn't confirmed yet, when the app last synced, and the tags iCloud gives each record</td><td>So nothing is lost or sent twice</td></tr>
+        <tr><td>For shared-list notifications: which runs of a shared list this device has already seen finished (announced or not), and the first names iCloud gives for the people in your shared lists</td><td>So a notification never comes twice and can say who finished</td></tr>
         <tr><td>A small file for the widget: each list's name, its rig's name and its progress line</td><td>The widget reads this instead of your whole database</td></tr>
       </tbody>
     </table>
-    <p>Your lists and their history live in the app's database, in a storage area shared only with Check &amp; Roll's own widget. Your rigs, the current version of each checklist, run history and the deletion markers are copied to your own iCloud, as described next. Everything else in the table (earlier versions of a checklist, your settings, today's walk-throughs, the cached Pro status, the sync bookkeeping and the widget's file) stays on this device and is never copied anywhere.</p>
+    <p>Your lists and their history live in the app's database, in a storage area shared only with Check &amp; Roll's own widget. Your rigs, the current version of each checklist, run history and the deletion markers are copied to your own iCloud, as described next. Everything else in the table (earlier versions of a checklist, your settings, today's walk-throughs, the cached Pro status, the sync bookkeeping, the notification records and the widget's file) stays on this device and is never copied anywhere.</p>
     <p>The app also writes short diagnostic messages to your device's system log, such as "Couldn't save the sync state". They say what went wrong, not what's on your lists, and never include anything you said.</p>
   </section>
 
@@ -85,13 +88,26 @@
     <h2 id="icloud-title">Your iCloud</h2>
     <p>If you're signed in to iCloud, Check &amp; Roll copies your rigs, checklists, run history and deletion markers to a private database in your own iCloud account, so your iPhone and iPad have the same lists and a new phone gets them back.</p>
     <ul>
-      <li>Only your Apple Account can read that private database. Long Road Software can't see it, and nothing in it is sent anywhere else.</li>
-      <li>The contents of every record are stored in CloudKit's encrypted fields. CloudKit encrypts them on your device before saving them to iCloud. If you turn on Advanced Data Protection, only you hold the keys.</li>
+      <li>Only your Apple Account can read that private database, except for checklists you share, which the people you invite can read and change, as described in Sharing a checklist below. Long Road Software can't see it. Nothing in it is sent anywhere else.</li>
+      <li>The contents of every record are stored in CloudKit's encrypted fields. CloudKit encrypts them on your device before saving them to iCloud. If you turn on Advanced Data Protection, only you hold the keys. For a checklist you share, the people you invite can read it too.</li>
       <li>It uses your iCloud storage. If your iCloud storage is full, syncing pauses and the app keeps working on your device.</li>
-      <li>The name you give each device, and the random ID made at install, go into iCloud with each check, reset and edit, so run history on your other devices can say who did what.</li>
+      <li>The name you give each device, and the random ID made at install, go into iCloud with each check, reset and edit, so run history on your other devices can say who did what. On a shared checklist, everyone it's shared with sees them too.</li>
       <li>If you're not signed in to iCloud, or iCloud is off for Check &amp; Roll, nothing is uploaded and the app works fully on the device. If you sign out, syncing stops and every checklist stays on the device.</li>
     </ul>
-    <p>Sharing a checklist with a partner who uses a different Apple Account isn't built yet. It's planned for version 1.0, and this page will say how it works before that version is released.</p>
+  </section>
+
+  <section class="wrap" aria-labelledby="sharing-title">
+    <h2 id="sharing-title">Sharing a checklist</h2>
+    <p>You can share a checklist with other people so everyone can see it and check off steps.</p>
+    <ul>
+      <li>When you share a checklist, it moves into a space of its own in your iCloud. The people you invite can then read and change that checklist, its runs and checks, and your rig's name and type, through Apple's iCloud sharing. Nothing passes through a Long Road Software server. Your other checklists, your rigs and your maintenance items stay private.</li>
+      <li>Each check, skip and reset on a shared checklist carries the device name of whoever made it ("iPhone" or "iPad" unless a name is set in Settings) and a random ID made when the app was installed, so run history can say who did what. That includes your own checks: everyone the checklist is shared with sees them.</li>
+      <li>The invitation is kept by Apple's iCloud sharing. It holds the names of the people you invite, whether they've accepted, and whether they can make changes. Apple's share screen shows the people in a share to each other, using their Apple Account details. That list is Apple's, not ours.</li>
+      <li>Changes a partner makes are stored in your iCloud, with the shared checklist. They count against your iCloud storage, whoever made them.</li>
+      <li>You decide who's invited. Only the people you invite can see or change the shared checklist.</li>
+      <li>You can stop sharing, delete the checklist or remove someone at any time. A partner can leave. A partner who loses access stops getting your changes and can no longer make their own, but their device keeps a read-only copy until they remove it. That copy includes any changes they made that never reached you.</li>
+      <li>A checklist someone else shares with you is kept in their iCloud, not yours. Your checks on it, with your device name and ID, go there.</li>
+    </ul>
   </section>
 
   <section class="wrap" aria-labelledby="walkthrough-title">
