@@ -90,6 +90,17 @@ h1 {
 }
 .lede { max-width: var(--measure); margin: 1.5rem 0 0; font-size: 1.25rem; color: var(--ink-2); }
 
+/* Hero: copy beside a phone screen */
+.hero-grid { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: center; }
+@media (min-width: 56rem) { .hero-grid { grid-template-columns: 1.1fr 0.7fr; } }
+.hero-shot { display: flex; justify-content: center; }
+.phone-frame {
+  width: 100%; max-width: 15rem; padding: 0.6rem;
+  background: var(--ink); border-radius: 1.6rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.22);
+}
+.phone-frame img { display: block; width: 100%; border-radius: 1.1rem; }
+
 /* The road's centre line, between sections */
 .centerline {
   height: 6px; margin: 0;
@@ -131,6 +142,56 @@ p { max-width: var(--measure); margin: 0 0 1rem; }
   border-radius: 0.5rem; font: 700 1rem var(--display); text-decoration: none;
 }
 .button:hover { filter: brightness(1.1); }
+.button.secondary {
+  background: transparent; color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+/* How it works: numbered steps with a screen each */
+.steps {
+  display: grid; gap: 2rem; grid-template-columns: 1fr;
+  padding: 0; margin: 0; list-style: none; counter-reset: step;
+}
+@media (min-width: 40rem) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .steps { grid-template-columns: repeat(4, 1fr); } }
+.step { counter-increment: step; }
+.step img { border-radius: 0.6rem; border: 1px solid var(--line); margin-bottom: 1rem; max-width: 10rem; }
+.step h3 {
+  display: flex; align-items: center; gap: 0.6rem;
+  margin: 0 0 0.4rem; font-size: 1.1rem; font-weight: 800;
+}
+.step h3::before {
+  content: counter(step);
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.6rem; height: 1.6rem; flex: none;
+  background: var(--stripe); color: var(--ink); border-radius: 50%;
+  font: 700 0.9rem var(--mono);
+}
+.step p { font-size: 1rem; }
+
+.handsfree {
+  display: grid; gap: 1.5rem; grid-template-columns: 1fr; align-items: center;
+  margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line);
+}
+@media (min-width: 40rem) { .handsfree { grid-template-columns: 8rem 1fr; } }
+.handsfree img { border-radius: 0.6rem; border: 1px solid var(--line); max-width: 8rem; }
+
+/* Video */
+video { width: 100%; max-width: 40rem; border-radius: 0.6rem; background: #000; display: block; }
+
+/* Free / Pro table */
+table.plan { width: 100%; max-width: var(--max); border-collapse: collapse; margin: 1.5rem 0; font-size: 1rem; }
+table.plan th, table.plan td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); text-align: left; }
+table.plan thead th { color: var(--ink-2); font-weight: 700; }
+table.plan td { text-align: center; }
+table.plan th[scope="row"] { text-align: left; font-weight: 600; }
+
+/* FAQ */
+.faq-list { max-width: var(--measure); }
+.faq-item { border-top: 1px solid var(--line); padding: 0.9rem 0; }
+.faq-item summary { cursor: pointer; font: 700 1.05rem var(--display); }
+.faq-item summary::marker { color: var(--accent); }
+.faq-item p { margin-top: 0.7rem; }
 
 /* How the work is done */
 .principles { display: grid; gap: 1.5rem 2.5rem; grid-template-columns: 1fr; padding: 0; margin: 2rem 0 0; list-style: none; }
