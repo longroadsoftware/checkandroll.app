@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Check &amp; Roll — RV checklist app for iPhone and iPad | Long Road Software</title>
-<meta name="description" content="Check & Roll walks RV owners through setup, departure and maintenance, in order, hands-free if you like. No account, no Long Road Software server. Not on the App Store yet.">
+<meta name="description" content="Check & Roll walks RV owners through setup, departure and maintenance, step by step and hands-free if you like. No account, no Long Road Software server. Not on the App Store yet.">
 <link rel="canonical" href="https://checkandroll.app/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Check &amp; Roll">
 <meta property="og:title" content="Check & Roll — RV checklist app for iPhone and iPad">
-<meta property="og:description" content="Check & Roll walks RV owners through setup, departure and maintenance, in order, hands-free if you like. No account, no Long Road Software server. Not on the App Store yet.">
+<meta property="og:description" content="Check & Roll walks RV owners through setup, departure and maintenance, step by step and hands-free if you like. No account, no Long Road Software server. Not on the App Store yet.">
 <meta property="og:url" content="https://checkandroll.app/">
 <meta property="og:image" content="https://checkandroll.app/images/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -24,7 +24,8 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"BreadcrumbList","itemListElement":[
 {"@type":"ListItem","position":1,"name":"Check & Roll","item":"https://checkandroll.app/"}
-]}
+]},
+{"@type":"SoftwareApplication","name":"Check & Roll","applicationCategory":"UtilitiesApplication","operatingSystem":"iOS","description":"Check & Roll walks RV owners through setup, departure and maintenance, step by step and hands-free if you like. No account, no Long Road Software server.","url":"https://checkandroll.app/","image":"https://checkandroll.app/images/og-image.png","publisher":{"@type":"Organization","name":"Long Road Software LLC","url":"https://longroadsoftware.com/"}}
 ]}
 </script>
 <!-- Analytics, off until the visitor says yes. See the privacy page. -->
@@ -35,6 +36,7 @@
   <a class="sign" href="https://longroadsoftware.com/" aria-label="Long Road Software, home"><span>Long Road</span><span>Software</span></a>
   <nav aria-label="Sections">
     <a href="/" aria-current="page">Check &amp; Roll</a>
+    <a href="/faq/">FAQ</a>
     <a href="/support/">Support</a>
     <a href="/privacy/">Privacy</a>
   </nav>
@@ -43,31 +45,145 @@
 <main>
   <div class="wrap hero">
     <p class="marker">Not on the App Store yet</p>
-    <h1>An RV checklist app for iPhone and iPad.</h1>
-    <p class="lede">Check &amp; Roll walks you through setup, departure and maintenance in the right order, with no account and no Long Road Software server.</p>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>You need a checklist.</h1>
+        <p class="lede">Check &amp; Roll walks you through setup, departure and maintenance, in order, hands-free if you like. No account, no Long Road Software server.</p>
+        <div class="actions">
+          <a class="button" href="#notify">Email me when it's out</a>
+          <a class="button secondary" href="#video">Watch the 30-second spot</a>
+        </div>
+      </div>
+      <div class="hero-shot">
+        <div class="phone-frame">
+          <picture>
+            <source srcset="/images/screens/09-departure-complete.webp" type="image/webp">
+            <img src="/images/screens/09-departure-complete.jpg" width="603" height="1311" alt="Check & Roll showing “Departure complete. All 26 steps done.”" loading="eager">
+          </picture>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="wrap"><div class="centerline" aria-hidden="true"></div></div>
 
-  <section class="wrap" aria-labelledby="does-title">
-    <h2 id="does-title">What it does</h2>
-    <ul>
-      <li>Built-in lists for travel trailers, fifth wheels, motorhomes, toads and tow vehicles.</li>
-      <li>Steps are presented in order: check or skip each one before moving on.</li>
-      <li>Critical steps, such as the black tank valve, ask you to confirm before you move on.</li>
-      <li>A hands-free walk-through reads each step aloud and listens for "done", so you can keep your hands on the job.</li>
-      <li>Works with Siri.</li>
-      <li>Works with no signal, anywhere you park.</li>
+  <section class="wrap" aria-labelledby="how-title">
+    <h2 id="how-title">How it works</h2>
+    <ol class="steps">
+      <li class="step">
+        <picture>
+          <source srcset="/images/screens/02-departure-not-started.webp" type="image/webp">
+          <img src="/images/screens/02-departure-not-started.jpg" width="603" height="1311" alt="Check & Roll showing a departure checklist, not yet started" loading="lazy">
+        </picture>
+        <h3>Pick your rig and its list</h3>
+        <p>Travel trailer, fifth wheel, motorhome, toad or tow vehicle: each has its own built-in checklists, ready to go.</p>
+      </li>
+      <li class="step">
+        <picture>
+          <source srcset="/images/screens/06-list-water-heater-awning-done.webp" type="image/webp">
+          <img src="/images/screens/06-list-water-heater-awning-done.jpg" width="603" height="1311" alt="Check & Roll list with the water heater and awning steps checked off" loading="lazy">
+        </picture>
+        <h3>Go step by step</h3>
+        <p>Check or skip each one in order. A step that depends on an earlier one waits its turn.</p>
+      </li>
+      <li class="step">
+        <picture>
+          <source srcset="/images/screens/08-critical-step-skipped-banner.webp" type="image/webp">
+          <img src="/images/screens/08-critical-step-skipped-banner.jpg" width="603" height="1311" alt="Check & Roll showing a red banner after a critical step was skipped" loading="lazy">
+        </picture>
+        <h3>Critical steps ask you to confirm</h3>
+        <p>The black tank valve and other critical steps need a confirm, not just a tap. Skip one, and the banner turns red so you don't drive off and miss it.</p>
+      </li>
+      <li class="step">
+        <picture>
+          <source srcset="/images/screens/09-departure-complete.webp" type="image/webp">
+          <img src="/images/screens/09-departure-complete.jpg" width="603" height="1311" alt="Check & Roll showing “Departure complete. All 26 steps done.”" loading="lazy">
+        </picture>
+        <h3>Done is green</h3>
+        <p>Finish every step, and the banner turns green and says so.</p>
+      </li>
+    </ol>
+
+    <div class="handsfree">
+      <picture>
+        <source srcset="/images/screens/05-handsfree-awning-in-and-locked.webp" type="image/webp">
+        <img src="/images/screens/05-handsfree-awning-in-and-locked.jpg" width="603" height="1311" alt="Check & Roll's hands-free walk-through showing “Awning in and locked”" loading="lazy">
+      </picture>
+      <div>
+        <h3>Hands-free, if you like</h3>
+        <p>Say the word, and Check &amp; Roll reads each step aloud and listens for &ldquo;done,&rdquo; so your hands stay on the job. It works with Siri, and with no signal, anywhere you park.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="video" aria-labelledby="video-title">
+    <h2 id="video-title">See it in action</h2>
+    <p>A 30-second look at a hands-free departure.</p>
+    <video controls preload="none" playsinline poster="/video/did-you-check-poster.jpg" width="960" height="540">
+      <source src="/video/did-you-check-1080p.mp4" type="video/mp4">
+      <source src="/video/did-you-check-720p.mp4" type="video/mp4">
+      Your browser can't play this video. Watch "Did You Check the Awning?" on <a href="https://youtu.be/hrdIFsINo1E">YouTube</a>.
+    </video>
+    <p class="fine">Dramatization. The people are AI-generated; the app screens are real.</p>
+    <p class="fine">Also on <a href="https://youtu.be/hrdIFsINo1E">YouTube</a>.</p>
+  </section>
+
+  <section class="wrap" aria-labelledby="depth-title">
+    <h2 id="depth-title">What's in it</h2>
+    <ul class="principles">
+      <li><strong>Built for every rig</strong><span>Travel trailers, fifth wheels, motorhomes, toads and tow vehicles each have their own built-in checklists.</span></li>
+      <li><strong>Your own lists, too</strong><span>Keep the built-in lists, write your own, and add your own notes on any step.</span></li>
+      <li><strong>Share with your partner</strong><span>Invite your partner, or anyone else, to a checklist through iCloud. Everyone can check off steps.</span></li>
+      <li><strong>Apple Watch</strong><span>See the step you're on and check it off from your wrist.</span></li>
+      <li><strong>Your own iCloud</strong><span>Syncs between your own iPhone and iPad through your own iCloud account. We never see it.</span></li>
+      <li><strong>No signal needed</strong><span>Everything works at a campsite with no bars.</span></li>
     </ul>
   </section>
 
-  <section class="wrap" aria-labelledby="privacy-title">
-    <h2 id="privacy-title">Your information</h2>
-    <ul>
-      <li>No account.</li>
-      <li>No Long Road Software server. Nothing about your rig or your checklists is sent to us. Your checklists are kept on your device and, if you use iCloud, in your own iCloud account.</li>
-    </ul>
-    <p>Full detail: the <a href="/privacy/">Check &amp; Roll privacy policy</a>. Need help: the <a href="/support/">Check &amp; Roll support page</a>.</p>
+  <section class="wrap" aria-labelledby="plan-title">
+    <h2 id="plan-title">Free and Pro</h2>
+    <p>Free is a complete, safe checklist app for one rig. Check &amp; Roll Pro is a one-time unlock, no subscription, with Family Sharing.</p>
+    <table class="plan">
+      <thead><tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Rigs</th><td>1</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Built-in checklists</th><td>All</td><td>All</td></tr>
+        <tr><th scope="row">Your own checklists</th><td>3</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Your own notes on steps</th><td>&mdash;</td><td>Yes</td></tr>
+        <tr><th scope="row">Hands-free walk-through</th><td>1 per checklist per day</td><td>Unlimited</td></tr>
+        <tr><th scope="row">Sharing a checklist</th><td>Join one, free</td><td>Start one</td></tr>
+        <tr><th scope="row">Apple Watch app</th><td>&mdash;</td><td>Yes</td></tr>
+        <tr><th scope="row">Siri, offline use, iCloud sync between your own devices</th><td>Yes</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+    <p>Safety is never behind Pro: running, resetting, undoing, run history, critical steps and the completion banners are free for everyone.</p>
+  </section>
+
+  <section class="wrap" aria-labelledby="faq-title" id="faq">
+    <h2 id="faq-title">Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is it?</summary>
+        <p>Check &amp; Roll is an iPhone and iPad checklist app for RVers. It walks you through setup, departure and maintenance in the right order, with no account and no Long Road Software server.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need an account?</summary>
+        <p>No. There's no account and no Long Road Software server. Your checklists stay on your device and, if you use iCloud, in your own iCloud account.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can my partner and I share a list?</summary>
+        <p>Yes. You can invite your partner, or anyone else, to a checklist through iCloud. Starting a share needs Pro; the people you invite join free, and everyone can check off steps.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is it a subscription?</summary>
+        <p>No. Pro is a one-time unlock, with Family Sharing, not a subscription.</p>
+      </details>
+      <details class="faq-item">
+        <summary>When is it out?</summary>
+        <p>We don't have a release date yet. Leave your email below and we'll write once, when it's out.</p>
+      </details>
+    </div>
+    <p><a href="/faq/">Read the full FAQ</a>.</p>
   </section>
 
   <section class="wrap" aria-labelledby="getting-title" id="notify">
@@ -87,7 +203,7 @@
 <footer>
   <div class="wrap">
     <span>&copy; 2026 Long Road Software LLC &middot; Tennessee, USA</span>
-    <span><a href="https://longroadsoftware.com/">Long Road Software</a> &middot; <a href="https://mediaflowswift.com/">MediaFlowSwift</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/support/">Support</a></span>
+    <span><a href="https://longroadsoftware.com/">Long Road Software</a> &middot; <a href="https://mediaflowswift.com/">MediaFlowSwift</a> &middot; <a href="/faq/">FAQ</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/support/">Support</a></span>
     <span id="analytics-choice"></span>
   </div>
 </footer>
