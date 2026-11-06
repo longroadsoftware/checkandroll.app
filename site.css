@@ -78,6 +78,13 @@ img { max-width: 100%; height: auto; }
 /* Opening */
 .hero { padding-block: 3rem 2.5rem; }
 @media (min-width: 48rem) { .hero { padding-block: 5rem 3.5rem; } }
+.product-badge {
+  display: block;
+  width: min(270px, 70vw);
+  height: auto;
+  margin: 0 0 1rem;
+}
+
 .marker {
   margin: 0 0 1rem;
   font: 500 0.8rem/1 var(--mono);
