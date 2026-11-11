@@ -1,0 +1,41 @@
+# Check & Roll
+
+> Check & Roll is an RV checklist app for iPhone and iPad from Long Road Software LLC (Tennessee, USA). It walks RV owners through setup, departure and maintenance checklists in order, hands-free if you like. Not on the App Store yet.
+
+## What it does
+- Built-in checklists for travel trailers, fifth wheels, motorhomes, toads and tow vehicles
+- Write your own checklists and add notes on any step
+- Steps run in order; a step that depends on an earlier one waits its turn
+- Critical steps (such as the black tank valve) need a confirm tap, not just a check; skipping one turns the banner red
+- Finishing every step turns the banner green
+- Hands-free walk-through: Check & Roll reads each step aloud and listens for "done"; works with Siri and with no signal
+- Share a checklist with a partner or anyone else through iCloud; everyone can check off steps
+- Syncs between your own iPhone and iPad through your own iCloud account
+
+## Requirements
+iPhone and iPad. Not on the App Store yet; sign up on the site to be told when it is.
+
+## Pricing
+Free is a complete, safe checklist app for one rig: all built-in checklists, 3 of your own checklists, 1 hands-free walk-through per checklist per day, and joining a shared checklist for free. Check & Roll Pro is a one-time unlock with Family Sharing, not a subscription: unlimited rigs, unlimited own checklists, notes on steps, unlimited hands-free walk-throughs, and starting a shared checklist. Safety features (running, resetting, undoing, run history, critical steps, completion banners) are free for everyone on both plans.
+
+## Privacy
+No account and no Long Road Software server. Checklists stay on the device and, if iCloud is used, in the user's own iCloud account. Analytics is off until the visitor says yes.
+
+## Manual
+- Manual home: https://checkandroll.app/manual/
+- Getting started: https://checkandroll.app/manual/getting-started/
+- Running a checklist: https://checkandroll.app/manual/running-a-checklist/
+- Editing steps: https://checkandroll.app/manual/editing-steps/
+- Hands-free and Siri: https://checkandroll.app/manual/handsfree-and-siri/
+- iCloud and sharing: https://checkandroll.app/manual/icloud-and-sharing/
+- Settings: https://checkandroll.app/manual/settings/
+
+## Key pages
+- Overview and plans: https://checkandroll.app/
+- FAQ: https://checkandroll.app/faq/
+- Support: https://checkandroll.app/support/
+- Privacy: https://checkandroll.app/privacy/
+- Company: https://longroadsoftware.com/
+
+## Contact
+https://checkandroll.app/support/
