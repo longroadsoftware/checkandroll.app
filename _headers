@@ -1,0 +1,17 @@
+# Cloudflare Pages response headers (checkandroll.app moved from GitHub Pages to Cloudflare Pages, 2026-11-11).
+# GitHub Pages could not send headers; these were the "not doable" items in the SEO audit.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
+/images/*
+  Cache-Control: public, max-age=604800
+
+/*.css
+  Cache-Control: public, max-age=86400
+
+https://checkandroll-app.pages.dev/*
+  X-Robots-Tag: noindex
