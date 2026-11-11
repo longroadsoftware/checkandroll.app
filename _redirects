@@ -1,0 +1,2 @@
+# Cloudflare Pages redirects (one per line: from to status). Real 301s, which GitHub Pages could not do.
+# Example: /old-page/ /new-page/ 301
