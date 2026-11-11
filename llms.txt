@@ -1,0 +1,31 @@
+# Check & Roll
+
+> Check & Roll is an RV checklist app for iPhone and iPad, made by Long Road Software LLC (Tennessee, USA). It walks RV owners through setup, departure and maintenance, step by step and hands-free if you like. Not on the App Store yet.
+
+## What it does
+- Built-in checklists for travel trailers, fifth wheels, motorhomes, toads and tow vehicles
+- Steps run in order; a step that depends on an earlier one waits its turn
+- Critical steps (such as the black tank valve) need a confirm, not just a tap; skipping one turns the banner red
+- Hands-free walk-through: Check & Roll reads each step aloud and listens for "done," works with Siri and with no signal
+- Write your own checklists and add notes on any step
+- Share a checklist with a partner or anyone else through iCloud; everyone can check off steps
+
+## Requirements
+iPhone and iPad. Not yet released on the App Store.
+
+## Pricing
+Free: one rig, all built-in checklists, 3 of your own checklists, 1 hands-free walk-through per checklist per day, join a shared checklist. Pro: one-time unlock (no subscription) with Family Sharing — unlimited rigs, unlimited own checklists, notes on steps, unlimited hands-free walk-throughs, start a shared checklist. Safety features (running, resetting, undoing, run history, critical steps, completion banners) are free for everyone.
+
+## Privacy
+No account and no Long Road Software server. Checklists stay on the device and, if iCloud is used, in the user's own iCloud account. Analytics is off until the visitor says yes.
+
+## Key pages
+- Overview: https://checkandroll.app/
+- FAQ: https://checkandroll.app/faq/
+- Manual: https://checkandroll.app/manual/
+- Support: https://checkandroll.app/support/
+- Privacy: https://checkandroll.app/privacy/
+- Company: https://longroadsoftware.com/
+
+## Contact
+support@checkandroll.app (via https://checkandroll.app/support/)
