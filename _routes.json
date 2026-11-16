@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Pages only go through functions/_middleware.js (the visit counter, LON-3645); files are served straight.",
+  "include": ["/*"],
+  "exclude": ["/images/*", "/video/*", "/site.css", "/analytics.js", "/favicon.svg", "/robots.txt", "/sitemap.xml", "/llms.txt"]
+}
