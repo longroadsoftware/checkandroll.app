@@ -1,7 +1,8 @@
 # Cloudflare Pages redirects (one per line: from to status). Real 301s, which GitHub Pages could not do.
 # Example: /old-page/ /new-page/ 301
 
-# Launch-day switch (LON-4643/LON-4642): uncomment this line and Check & Roll's QR code and
-# "Download on the App Store" badge, already live at /get on the home and support pages, start
-# sending every scan and tap straight to the App Store. Until then /get shows the "coming soon" page.
-# /get https://apps.apple.com/app/id6825395980 301
+# Launch-day switch (LON-4643/LON-4642): Check & Roll's QR code and "Download on the App Store"
+# badge, already live at /get on the home and support pages, send every scan and tap straight to
+# the App Store. Held un-merged (DO NOT MERGE) until Apple approves Check & Roll 1.0 and Mike
+# clicks release — see LON-4655 / LON-4703.
+/get https://apps.apple.com/app/id6825395980 301
